@@ -74,6 +74,7 @@ export const hasClosestByAttribute = (element: Node, attr: string, value: string
     return isClosest && e;
 };
 
+// 存在最近的block
 export const hasClosestBlock = (element: Node) => {
     if (!element) {
         return false;

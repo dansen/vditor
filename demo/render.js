@@ -19,6 +19,7 @@ previewElement.addEventListener('click', function (event) {
 })
 
 const render = (fileName) => {
+  console.log("filename:", fileName)
   fetch(`/demo/markdown/${fileName}.md`).
     then(response => response.text()).
     then(markdown => {
